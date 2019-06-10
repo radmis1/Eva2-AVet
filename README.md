@@ -2,7 +2,7 @@
 Astora Vet
 
 
-![vet](https://github.com/radmis1/Adtora-Library/blob/master/src/assets/A.png)
+![vet](https://github.com/radmis1/Eva2-AVet/blob/master/imgaes/logo.png)
 
 
 
