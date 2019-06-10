@@ -10,7 +10,10 @@ Astora Veterinary, una división de Astora Company, es una empresa dedicada al b
 
 Disponemos de los mejores veterinarios,maquinaria, medicamentos,ambulancias animales y servicio a domicilio.
 
-No olvides contactarnos para reservar tu hora
+No olvides contactarnos para reservar tu hora.
+WhatsApp: (+569)-98653214
+Email: astoravet@contacto.com
+Direccion: Av.Matta 369 
 
 
 ![perro](https://github.com/radmis1/Eva2-AVet/blob/master/imgaes/perro.png)
