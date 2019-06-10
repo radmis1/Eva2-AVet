@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ver</title>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!--BARRA DE NAVEGACION CON TABS-->
+    <nav class="nav-extended ">
+        <div class="nav-wrapper blue-grey darken-1">
+                <a href="menu.html" class="brand-logo"><img src="imgaes/logo.png" width="300" height="60"></img></a>
+                <a href="menu.html" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a onclick="logout()">Salir</a></li>
+            </ul>
+        </div>
+        <div class="nav-content">
+            <ul class="tabs tabs-transparent blue-grey">
+                <li class="tab"><a href="insertar.html">Agregar Mascota</a></li>
+                <li class="tab"><a href="eliminar.html">Eliminar</a></li>
+                <li class="tab"><a href="modificar.html">Modificar</a></li>
+                <li class="tab"><a href="medicamentos.html">Medicamentos</a></li>
+                <li class="tab"><a href="crearUsuario.html">Crear Usuario</a></li>
+                <li class="tab"><a href="ver.html">Ver Mascotas</a></li>
+            </ul>
+        </div>
+        <div class="center">
+            <div class="nav-content; flow-text">
+                <div class="blue-grey lighten-1">
+                    <div class="row">
+                        <div class="col s8 offset">
+                            <span>VER MEDICAMENTOS</span>
+                        </div>
+                        <div class="col s2 offset">
+                            <a class="waves-effect waves-light btn" onclick="verDatos()">Mostrar Medicamentos</a>
+                        </div>
+                        <div class="col s2 offset">
+                            <a class="waves-effect waves-light btn" onclick="reload()">Limpiar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--VER MEDICAMENTOS-->
+    <br>
+    <div class="container">
+        <div>
+            <div class="h4">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="col s4">
+                            <label>Tipo de medicamento</label>
+                        </div>
+                        <div class="col s4">
+                            <label>Nombre medicamento</label>
+                        </div>
+                        <div class="col s4">
+
+                            <label>Descripcion medicamento</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <br>
+            <div id="tabla">
+
+            </div>
+            <bR>
+            <br>
+        </div>
+    </div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="verMedicamentos.js"></script>
+</body>
+
+</html>

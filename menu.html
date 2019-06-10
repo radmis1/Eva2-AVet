@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Menu</title>
+</head>
+
+<body>
+        <!--BARRA DE NAVEACION-->
+        <nav class="nav-extended ">
+                <div class="nav-wrapper blue-grey darken-1">
+                        <a href="menu.html" class="brand-logo"><img src="imgaes/logo.png" width="300"
+                                        height="60"></img></a>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i
+                                        class="material-icons">menu</i></a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                <li><a onclick="logout()">Salir</a></li>
+                        </ul>
+                </div>
+                <div class="nav-content">
+                        <ul class="tabs tabs-transparent blue-grey">
+
+                                <li class="tab"><a href="insertar.html">Agregar Mascota</a></li>
+                                <li class="tab"><a href="eliminar.html">Eliminar</a></li>
+                                <li class="tab"><a href="modificar.html">Modificar</a></li>
+                                <li class="tab"><a href="medicamentos.html">Medicamentos</a></li>
+                                <li class="tab"><a href="crearUsuario.html">Crear Usuario</a></li>
+                                <li class="tab"><a href="ver.html">Ver Mascotas</a></li>
+                                <li class="tab"><a href="verMedicmentos.html">Ver Medicamentos</a></li>
+                        </ul>
+                </div>
+                <div class="center">
+                        <div class="nav-content; flow-text">
+                                <div class="blue-grey lighten-1">
+                                        NUESTROS SERVICIOS
+                                </div>
+                        </div>
+                </div>
+        </nav>
+
+        <Br>
+        <Br>
+        <Br>
+
+        <div class="row">
+
+                <div class="col s6">
+                        <div class="row">
+                                <div class="col s10  offset-s2">
+                                        <div class="card">
+                                                <div class="card-image">
+                                                        <img src="imgaes/ecografia.jpg" width="450" height="420">
+                                                </div>
+                                                <div class="card-content">
+                                                        <p>ECOGRAFíAS</p>
+                                                        <br>
+                                                        <p>Nuestro servicio de ecografía lleva más de 8 años apoyando el
+                                                                diagnostico de nuestros pacientes y los de nuestros
+                                                                colegas que solicitan este medio de diagnostico. El 2012
+                                                                renovamos nuestro equipo, el cual es ecografo
+                                                                Veterinario DP-6600 Vet Mindray, con modo 2D y M,
+                                                                Transductor micro convexo de multifrecuecia (5, 6,5 y 8
+                                                                MhZ).</p>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <div class="col s6">
+                        <div class="row">
+                                <div class="col s10  offset-s1">
+                                        <div class="card">
+                                                <div class="card-image">
+                                                        <img src="imgaes/radiología.jpg" width="420" height="355">
+
+                                                </div>
+                                                <div class="card-content">
+                                                        <p>RADIOLOGÍA</p>
+                                                        <br>
+                                                        <p>Contamos con un nuevo y moderno equipo de radiología de uso
+                                                                exclusivo veterinario, de origen coreano marca Ecoray,
+                                                                ánodo rotatorio y colimador con capacidad de obtener
+                                                                placas 40×40 cm, con calidad de imagen garantizada.
+                                                                Nuestro equipo está ubicado en una sala construida
+                                                                especialmente para este servicio, en una ubicación
+                                                                estratégica, de concreto y puerta plomada para evitar la
+                                                                exposición de rayos X a nuestros clientes, vecinos y
+                                                                personal de la clínica.
+
+                                                                Contamos con el servicio de radiología simple y
+                                                                contrastada (sistema digestivo).</p>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <div class="row">
+
+                <div class="col s6">
+                        <div class="row">
+                                <div class="col s10  offset-s2">
+                                        <div class="card">
+                                                <div class="card-image">
+                                                        <img src="imgaes/anestesia.jpg" width="420" height="355">
+
+                                                </div>
+                                                <div class="card-content">
+                                                        <p>CIRUGÍA Y ANESTECIA INHALATORIA</p>
+                                                        <BR>
+                                                        <p>Contamos con una adecuada y amplia sala de cirugía, autoclave
+                                                                para esterilizar el material quirúrgico, lámpara
+                                                                especial de quirófano, monitor de multiparámetros, Con
+                                                                este monitor se puede evaluar los signos vitales del
+                                                                paciente durante la cirugía, lo que es fundamental para
+                                                                conducir de manera eficiente la anestesia. Con este
+                                                                equipo se puede evaluar y conocer la frecuencia
+                                                                cardiaca, frecuencia respiratoria, ritmo cardiaco,
+                                                                presión arterial sistólica media y diastólica,,
+                                                                temperatura corporal, saturación de oxígeno y realiza
+                                                                una medición del dióxido de carbono espirado por el
+                                                                paciente (capnografía).</p>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <div class="col s6">
+                        <div class="row">
+                                <div class="col s10  offset-s1">
+                                        <div class="card">
+                                                <div class="card-image">
+                                                        <img src="imgaes/perro.png" width="420" height="400">
+
+                                                </div>
+                                                <div class="card-content">
+                                                        <p>MEDICINA PREVENTIVA</p>
+                                                        <br>
+                                                        <p>Trabajar para mantener sanas a nuestras mascotas en vez de
+                                                                esperar a tratar de curarlas cuando están enfermas, es
+                                                                el objetivo de la medicina preventiva. Para el bienestar
+                                                                de su mascota es importante que este correctamente
+                                                                vacunado. Cada paciente se les entrega un registro
+                                                                sanitario y de salud donde apuntamos las vacunas y
+                                                                desparasitaciones realizadas y a realizar, además queda
+                                                                un registro computacional, informando a cada propietario
+                                                                según corresponda vía teléfonica.</p>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+
+
+        <!--JavaScript at end of body for optimized loading-->
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script src="menu.js"></script>
+</body>
+<footer class="page-footer blue-grey darken-1">
+        <div class="container">
+                <div class="row">
+                        <div class="col l6 s12">
+                                <h5 class="white-text">CONTACTANOS Y RESERVA TU HORA</h5>
+                                <p class="grey-text text-lighten-4">(+569)-90189768</p>
+                                <p class="grey-text text-lighten-4">contacto@astoravet.cl</p>
+                        </div>
+
+                </div>
+        </div>
+        <div class="text-align: center">
+                <div class="footer-copyright">
+
+                        <div class="container">
+                                © 2019 Copyright Astora Veterinary
+                                <a class="grey-text text-lighten-4 right"></a>
+                        </div>
+                </div>
+        </div>
+</footer>
+
+</html>
